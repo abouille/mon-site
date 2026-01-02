@@ -1,84 +1,209 @@
-
 <!DOCTYPE html>
-<html lang="fr-FR">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OcéNet - Entreprise de Nettoyage à Treillières (44119)</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
-        header {
-            background-color: #007BFF;
-            color: white;
-            padding: 1rem;
-            text-align: center;
-        }
-        nav {
-            background-color: #f8f9fa;
-            padding: 1rem;
-            text-align: center;
-        }
-        nav a {
-            margin: 0 1rem;
-            text-decoration: none;
-            color: #333;
-        }
-        main {
-            padding: 2rem;
-        }
-        section {
-            margin-bottom: 2rem;
-        }
-        footer {
-            background-color: #343a40;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OcéNet — Nettoyage professionnel à Treillières (44119)</title>
+  <meta name="description" content="OcéNet : nettoyage toiture, terrasse, façade, parking et panneaux solaires autour de Nantes — Treillières (44119). Devis gratuit." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header>
-        <h1>Bienvenue chez OcéNet</h1>
-        <p>Votre expert en nettoyage à Treillières (44119)</p>
-    </header>
-    <nav>
-        <a href="#accueil">Accueil</a>
-        <a href="#services">Nos Services</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <main>
-        <section id="accueil">
-            <h2>À propos de nous</h2>
-            <p>OcéNet est une entreprise de nettoyage professionnelle basée à Treillières (44119). Nous offrons des services de nettoyage de haute qualité pour les particuliers et les entreprises.</p>
-        </section>
-        <section id="services">
-            <h2>Nos Services</h2>
-            <ul>
-                <li>Nettoyage de bureaux et locaux professionnels</li>
-                <li>Nettoyage résidentiel</li>
-                <li>Nettoyage après travaux</li>
-                <li>Nettoyage industriel</li>
-                <li>Nettoyage de vitres</li>
-            </ul>
-        </section>
-        <section id="contact">
-            <h2>Contactez-nous</h2>
-            <p>Adresse : Treillières (44119)</p>
-            <p>Téléphone : [Votre numéro de téléphone]</p>
-            <p>Email : [Votre adresse email]</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2026 OcéNet. Tous droits réservés.</p>
-    </footer>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="container flex between center">
+      <a class="logo" href="#home" aria-label="OcéNet Accueil">
+        <img class="logo-img" src="assets/logo_ocenet.jpg" alt="Logo OcéNet" />
+        <span class="logo-text">OcéNet</span>
+      </a>
+
+      <!-- Barre de contact (clic téléphonique / email) -->
+      <div class="top-contact">
+        <a href="tel:+33606476188" class="contact-link">📞 06 06 47 61 88</a>
+        <span class="dot">•</span>
+        <a href="mailto:ocenet44@gmail.com" class="contact-link">✉️ ocenet44@gmail.com</a>
+      </div>
+
+      <nav class="main-nav">
+        <a href="#services">Services</a>
+        <a href="#realisations">Réalisations</a>
+        <a href="#avis">Avis</a>
+        <a class="cta" href="#contact">Devis gratuit</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section id="home" class="hero">
+    <div class="container grid two">
+      <div>
+        <h1>Nettoyage professionnel à <strong>Treillières (44119)</strong></h1>
+        <p class="lead">
+          Autour de Nantes, OcéNet redonne <strong>éclat</strong> et <strong>valeur</strong> à votre bien :
+          toiture, terrasse, façade, parking et panneaux solaires.
+        </p>
+        <div class="actions">
+          <a class="btn primary" href="#services">Découvrir nos services</a>
+          <a class="btn ghost" href="#contact">Demander un devis</a>
+        </div>
+
+        <div class="trust">
+          <p class="trust-title">Ils nous font confiance</p>
+          <div class="logos">
+            <img src="assets/logo_rooftop.svg" alt="Rooftop" />
+            <img src="assets/logo_amazon.svg" alt="Amazon" />
+            <img src="assets/logo_mcdonalds.svg" alt="McDonald's" />
+            <img src="assets/logo_senalia.svg" alt="Sénalia" />
+            <img src="assets/logo_century21.svg" alt="Century 21" />
+          </div>
+        </div>
+      </div>
+
+      <figure class="hero-media">
+        <img src="assets/hero-cleaning.jpg" alt="Intervention OcéNet de nettoyage en périphérie nantaise" />
+        <figcaption>Intervention OcéNet en périphérie nantaise</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2>Nos services</h2>
+
+      <div class="cards grid five">
+        <article class="card">
+          <img class="picto" src="assets/picto_toiture.png" alt="Picto — Nettoyage de toiture" />
+          <h3>Nettoyage de Toiture</h3>
+          <p>Démoussage, traitement hydrofuge et entretien complet pour prolonger la durée de vie de votre toiture.</p>
+        </article>
+
+        <article class="card">
+          <img class="picto" src="assets/picto_terrasse.png" alt="Picto — Nettoyage de terrasse" />
+          <h3>Nettoyage de Terrasse</h3>
+          <p>Élimination des mousses et taches, remise à neuf de vos dallages, bois et bétons extérieurs.</p>
+        </article>
+
+        <article class="card">
+          <img class="picto" src="assets/picto_facade.png" alt="Picto — Nettoyage de façade" />
+          <h3>Nettoyage de Façade</h3>
+          <p>Soft-wash adapté à chaque revêtement pour un résultat homogène et durable.</p>
+        </article>
+
+        <article class="card">
+          <img class="picto" src="assets/picto_solaire.png" alt="Picto — Nettoyage de panneaux solaires" />
+          <h3>Nettoyage de Panneaux Solaires</h3>
+          <p>Entretien délicat pour maintenir un rendement optimal et prolonger la performance de vos installations.</p>
+        </article>
+
+        <article class="card">
+          <img class="picto" src="assets/picto_parking.png" alt="Picto — Nettoyage de parkings" />
+          <h3>Nettoyage de Parkings</h3>
+          <p>Désencrassement des sols, suppression des traces d’huile, et mise au propre des zones de stationnement.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== RÉALISATIONS ===== -->
+  <section id="realisations" class="realisations">
+    <div class="container">
+      <h2>Quelques réalisations autour de Nantes</h2>
+      <div class="gallery grid three">
+        <img src="assets/real_1.jpg" alt="Avant/Après toiture" />
+        <img src="assets/real_2.jpg" alt="Terrasse nettoyée" />
+        <img src="assets/real_3.jpg" alt="Façade rénovée" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== AVIS ===== -->
+  <section id="avis" class="avis">
+    <div class="container">
+      <h2>Avis clients</h2>
+      <div class="quotes grid two">
+        <blockquote>
+          <p>« Intervention rapide et résultat impeccable sur notre toiture à Grandchamp-des-Fontaines. »</p>
+          <cite>— Claire M.</cite>
+        </blockquote>
+        <blockquote>
+          <p>« Notre terrasse a retrouvé sa couleur d’origine, équipe pro et à l’écoute. »</p>
+          <cite>— Julien R.</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT / DEVIS ===== -->
+  <section id="contact" class="contact">
+    <div class="container grid two">
+      <div>
+        <h2>Devis gratuit</h2>
+        <p>Basés à <strong>Treillières (44119)</strong>, nous intervenons sur tout le nord de Nantes et l’agglomération nantaise.</p>
+        <ul class="bullets">
+          <li>Déplacement et diagnostic offerts</li>
+          <li>Interventions planifiables le samedi</li>
+          <li>Assurance RC Pro</li>
+        </ul>
+      </div>
+
+      <!-- Formulaire email (FormSubmit) -->
+      <form class="form" action="https://formsubmit.co/ocenet44@gmail.com" method="post">
+        <input type="hidden" name="_subject" value="Nouvelle demande OcéNet (site)" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_template" value="table" />
+        <input type="hidden" name="_next" value="/merci.html" />
+
+        <label>Nom
+          <input type="text" name="Nom" required />
+        </label>
+        <label>Email
+          <input type="email" name="Email" required />
+        </label>
+        <label>Téléphone
+          <input type="tel" name="Téléphone" value="06 06 47 61 88" />
+        </label>
+
+        <label>Service souhaité
+          <select name="Service">
+            <option>Nettoyage de toiture</option>
+            <option>Nettoyage de terrasse</option>
+            <option>Nettoyage de façade</option>
+            <option>Nettoyage de panneaux solaires</option>
+            <option>Nettoyage de parking</option>
+          </select>
+        </label>
+
+        <label>Ville
+          <input type="text" name="Ville" placeholder="Ex : Treillières, Grandchamp-des-Fontaines" />
+        </label>
+
+        <label>Message
+          <textarea name="Message" rows="4" placeholder="Décrivez votre besoin"></textarea>
+        </label>
+
+        <button class="btn primary" type="submit">Envoyer ma demande</button>
+        <p class="form-note">En soumettant ce formulaire, vous acceptez d’être recontacté(e) par OcéNet à l’adresse ocenet44@gmail.com.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container flex between center">
+      <p>© <span id="year"></span> OcéNet — Treillières, 44119 — SIREN: 000 000 000</p>
+      <nav class="footer-nav">
+        <a href="#">Mentions légales</a>
+        <a href="#">Politique de confidentialité</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
